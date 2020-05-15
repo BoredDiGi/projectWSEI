@@ -21,9 +21,9 @@ function rec(x) {
     document.getElementById("text").innerHTML = " nieobsługiwany warunek, zgłoś go. ";
 
 };
-var v = document.getElementsByTagName('video')[0];
+var video = document.getElementsByTagName('video')[0];
       
-      v.addEventListener('timeupdate', function()
+      video.addEventListener('timeupdate', function()
       {
         var p = document.getElementsByTagName('progress')[0];
         p.value = 100*this.currentTime/this.duration;
