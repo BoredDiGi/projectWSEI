@@ -15,6 +15,38 @@ function rec(x) {
     document.getElementById("text").innerHTML = " nieobsługiwany wyjątek, zgłoś go. ";
 
 };
+var i = 0;
+var words = new Array();
+
+function add() {
+    i++;
+    const tk = prompt("Napisz swoje zadanie:");
+    if (!tk) display = none;
+    let addnew = document.createElement('div');
+    document.getElementById("todoli").appendChild(addnew);
+    addnew.id = "task"+i;
+    addnew.innerHTML = tk + '<div id="edit" onclick="editNew(' + i +')">Edytuj</div><div id="delete" onclick="delNew('+i+')">Usuń</div>';
+}
+
+function delNew(z) {
+    var d = document.getElementById("todoli");
+    var zd = document.getElementById("task" + z)
+    let delElement = d.removeChild(zd);
+}
+
+function editNew(z) {
+    const editit = prompt("Wprowadź zmianę:");
+    if (!editit) display = none;
+    var nt = document.getElementById("task"+z).innerHTML;
+    var it = nt.replace(nt, editit);
+    document.getElementById("task" + z).innerHTML = it + '<div id="edit" onclick="editNew(' + z + ')">Edytuj</div><div id="delete" onclick="delNew(' + z +')">Usuń</div>';
+
+
+}
+
+
+
+
 var video = document.getElementsByTagName('video')[0];
       
       video.addEventListener('timeupdate', function()
