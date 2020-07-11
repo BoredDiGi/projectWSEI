@@ -4,10 +4,11 @@
 }
 
 .bg{
-    width: 98.8vw;
+    width: 100%;
     height: 100%;
     z-index: -100;
-    background: url("../assets/oil.jpg") ;
+    *background-color: green;
+    background: url("../assets/tlomoz.jpg") repeat;
     background-size: 100%;
     background-attachment: fixed;
     filter: blur(3px);
@@ -35,6 +36,10 @@ nav ul li {
     padding: 10px;
     text-align: center;
     border-radius: 2px;
+}
+#video video{
+    width: 100%;
+    height: 100%;
 }
 
 nav ul li:hover{
@@ -64,7 +69,7 @@ section a{
     background-color: rgba(255, 255, 255, 0.6);
     background: rgba(255, 255, 255, 0.6);
     color: rgba(0, 0, 0, 1);
-    width: 57vw;
+    width: 70%;
     height: 100%;
     border-radius: 10px;
 }
@@ -73,7 +78,7 @@ section a{
     margin-left: 10px;
     text-align: left;
     font-size: 50px;
-    width: 800px;
+    width: auto;
 }
 
 #main p{
@@ -87,21 +92,29 @@ section a{
  background: #0F0;
  transition-duration: 0.2s;
 }
+#allrec{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: block;
+}
 
 #recipes{
     background-color: rgba(255, 255, 255, 0.6);
     background: rgba(255, 255, 255, 0.6);
     color: rgba(0, 0, 0, 1);
-    width: 30vw;
+    width: auto;
     height: 100%;
     border-radius: 10px;
     padding: 10px;
     margin-left: 5px;
     text-align: center;
+    display: block;
     float: left;
 }
 
 #recipes img{
+
 width: 25vw;
 opacity: 0.7;
 }
@@ -115,11 +128,11 @@ opacity: 0.7;
     background-color: rgba(255, 255, 255, 0.6);
     background: rgba(255, 255, 255, 0.6);
     color: rgba(0, 0, 0, 1);
-    width: 60vw;
+    width: 60%;
     height: 100%;
     border-radius: 10px;
     padding: 10px;
-    margin-left: 5vw;
+    margin-left: 5px;
     text-align: center;
     float: left;
 }
