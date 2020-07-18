@@ -12,23 +12,38 @@
     </div>
     <nav>
         <ul>
-            <a href="index.html"><li>Początek</li></a>
-            <a href="recipes.html"><li>Przepisy</li></a>
-            <a href="video.html"><li>Nagrania</li></a>
-            <a href="todo.html"><li>Lista do zrobienia</li></a>
+            <a href="index.html"><li><img src="assets/menu.svg" /> Początek</li></a>
+            <a href="recipes.html"><li><img src="assets/menu.svg" /> Przepisy</li></a>
+            <a href="video.html"><li><img src="assets/menu.svg" /> Nagrania</li></a>
+            <a href="todo.html"><li><img src="assets/menu.svg" /> Lista do zrobienia</li></a>
         </ul>
     </nav>
     <br />
     <br />
-    <div id="allrec">
-        <section id="recipes">
-            <img src="./assets/dumplings.jpg" onclick="rec(1)">
-            <img src="./assets/salad.jpg" onclick="rec(2)">
-        </section>
-        <section id="text">
-            <h1> Wybierz obrazek aby wybrać przepis :)</h1>
-        </section>
-    </div>
+    <section id="cont">
+        <div id="allrec">
+            <section id="recipes">
+                <img src="./assets/dumplings.jpg" onclick="rec(1)">
+                <img src="./assets/salad.jpg" onclick="rec(2)">
+            </section>
+            <section id="text">
+                <h1> Wybierz obrazek aby wybrać przepis :)</h1>
+            </section>
+        </div>
+    </section>
+    <br />
+    <footer>
+        <div id="menubot">
+            <ul>
+                <a href="index.html"><li>Początek</li></a>
+                <a href="recipes.html"><li>Przepisy</li></a>
+                <a href="video.html"><li>Nagrania</li></a>
+                <a href="todo.html"><li>Lista do zrobienia</li></a>
+            </ul>
+        </div>
+        <br />
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
     <script src="./scripts/app.js"></script>
 </body>
 </html>

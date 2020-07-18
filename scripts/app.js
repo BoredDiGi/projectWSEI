@@ -24,7 +24,7 @@ function add() {
     if (!tk) display = none;
     let addnew = document.createElement('div');
     document.getElementById("todoli").appendChild(addnew);
-    addnew.id = "task"+i;
+    addnew.id = "task" + i;
     addnew.innerHTML = tk + '<div id="edit" onclick="editNew(' + i +')">Edytuj</div><div id="delete" onclick="delNew('+i+')">Usuń</div>';
 }
 
@@ -47,10 +47,3 @@ function editNew(z) {
 
 
 
-var video = document.getElementsByTagName('video')[0];
-      
-      video.addEventListener('timeupdate', function()
-      {
-        var p = document.getElementsByTagName('progress')[0];
-        p.value = 100*this.currentTime/this.duration;
-      });
